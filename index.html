@@ -5,6 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video y PDF</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link a la hoja de estilos -->
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, black 33.33%, yellow 33.33%, yellow 66.66%, red 66.66%);
+            color: black;
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos responsivos para el video */
+        .video-container video {
+            width: 100%; /* El video ocupará el 100% del ancho disponible */
+            height: auto; /* La altura se ajusta automáticamente */
+            max-width: 600px; /* Limite el tamaño del video en pantallas grandes */
+            margin: 0 auto; /* Centrar el video */
+        }
+
+        /* Estilos del botón */
+        .pdf-container button {
+            font-size: 18px;
+            padding: 15px 25px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .pdf-container button:hover {
+            background-color: #218838;
+        }
+
+        /* Adaptaciones para pantallas pequeñas */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            .pdf-container button {
+                font-size: 16px;
+                padding: 12px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -14,7 +79,7 @@
     <!-- Video -->
     <div class="video-container">
         <h2>Servus hijo de puta</h2>
-        <video width="600" controls>
+        <video controls autoplay muted>
             <source src="example.mp4" type="video/mp4">
             Tu navegador no soporta videos HTML5.
         </video>
@@ -22,8 +87,8 @@
 
     <!-- Botón para abrir PDF -->
     <div class="pdf-container">
-        <h2>Hier kommt das echte Sempro</h2>
-        <button onclick="abrirPDF()">Saufen</button>
+
+        <button onclick="abrirPDF()">Sempro</button>
     </div>
 </div>
 
@@ -33,6 +98,11 @@
         window.open('pp.pdf', '_blank');
     }
 </script>
+
+</body>
+</html>
+
+
 
 </body>
 </html>
