@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video y PDF</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link a la hoja de estilos -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Fake Sempro</h1>
+
+    <!-- Video -->
+    <div class="video-container">
+        <h2>Servus hijo de puta</h2>
+        <video width="600" controls>
+            <source src="example.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+
+    <!-- Botón para abrir PDF -->
+    <div class="pdf-container">
+        <h2>Hier kommt das echte Sempro</h2>
+        <button onclick="abrirPDF()">Saufen</button>
+    </div>
+</div>
+
+<!-- Script para abrir el PDF -->
+<script>
+    function abrirPDF() {
+        window.open('pp.pdf', '_blank');
+    }
+</script>
+
+</body>
+</html>
+
