@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video y PDF</title>
+    <title>GIF y PDF</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link a la hoja de estilos -->
     <style>
-        /* Estilos básicos */
+        /* Fondo con los colores de la bandera de Bélgica */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(to right, black 33.33%, yellow 33.33%, yellow 66.66%, red 66.66%);
-            color: black;
+            color: white; /* Ajustar el color del texto para que sea legible */
         }
 
         .container {
@@ -30,12 +30,12 @@
             margin-bottom: 10px;
         }
 
-        /* Estilos responsivos para el video */
-        .video-container video {
-            width: 100%; /* El video ocupará el 100% del ancho disponible */
+        /* Estilos responsivos para el GIF */
+        .gif-container img {
+            width: 100%; /* El GIF ocupará el 100% del ancho disponible */
             height: auto; /* La altura se ajusta automáticamente */
-            max-width: 600px; /* Limite el tamaño del video en pantallas grandes */
-            margin: 0 auto; /* Centrar el video */
+            max-width: 600px; /* Limite el tamaño del GIF en pantallas grandes */
+            margin: 0 auto; /* Centrar el GIF */
         }
 
         /* Estilos del botón */
@@ -76,19 +76,16 @@
 <div class="container">
     <h1>Fake Sempro</h1>
 
-    <!-- Video -->
-    <div class="video-container">
+    <!-- GIF -->
+    <div class="gif-container">
         <h2>Servus hijo de puta</h2>
-        <video controls autoplay muted>
-            <source src="example2.mp4" type="video/mp4">
-            Tu navegador no soporta videos HTML5.
-        </video>
+        <img src="example.gif" alt="GIF en bucle">
     </div>
 
     <!-- Botón para abrir PDF -->
     <div class="pdf-container">
-
-        <button onclick="abrirPDF()">Sempro</button>
+        <h2>Hier kommt das echte Sempro</h2>
+        <button onclick="abrirPDF()">Saufen</button>
     </div>
 </div>
 
@@ -98,6 +95,10 @@
         window.open('pp.pdf', '_blank');
     }
 </script>
+
+</body>
+</html>
+
 
 </body>
 </html>
